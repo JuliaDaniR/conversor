@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="script.js"></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <nav>
+      <button class="btn-moneda" onclick="mostrarConversor('ul-moneda')">
+        Conversor monedas
+      </button>
+      <button class="btn-temperatura" onclick="mostrarConversor('clima')">
+        Conversor temperaturas
+      </button>
+    </nav>
+    <div class="container">
+      <h1 class="page-title">Conversor</h1>
+      <div class="nombre">
+        <label for="nombre">Ingresa tu nombre</label><br />
+        <input class="input" id="nombre" type="text" name="nombre" />
+      </div>
+      <img
+        src="https://user-images.githubusercontent.com/121910576/257302088-d2a9edb6-75e5-4118-aaba-6f53da7715dc.png"
+        class="page-logo"
+        alt=""
+      />
+    </div>
+    <a href="https://www.aluracursos.com/" target="_blank">
+      <img
+        src="https://www.aluracursos.com/assets/img/home/alura-logo.1686744883.svg"
+        alt=""
+        class="alura-latam-logo"
+      />
+    </a>
+    <div id="ul-moneda" class="contenedor-moneda">
+      <img
+        src="https://caelum-online-public.s3.amazonaws.com/assets-imersaodev/Convers%C3%A3o+1.png"
+      />
+      <div class="contenido-moneda">
+        <h2 id="saludo"></h2>
+        <h1 class="titulo5">Cotizador de monedas</h1>
+        <label for="moneda">Ingrese su moneda</label>
+        <select name="moneda" id="moneda">
+          <option value="Dolar">Dolar</option>
+          <option value="Euro">Euro</option>
+          <option value="PesoMexicanos">Pesos Mexicanos</option>
+          <option value="PesosArgentinos">Pesos Argentinos</option>
+          <option value="Bitcoin">Bitcoin</option>
+        </select>
+        <h3>Ingresa el importe</h3>
+        <input
+          type="number"
+          id="valorCotizar"
+          placeholder="Ingresa el importe"
+        />
+      </div>
+      <div class="content-moneda">
+        <h3>Elige la moneda para convertir</h3>
+        <div class="content">
+          <span class="sp">
+            <input
+              class="input"
+              id="dolar"
+              type="radio"
+              name="monedas"
+              value="1"
+            />
+            <label for="dolar">Dólar</label><br />
+            <input
+              class="input"
+              id="euro"
+              type="radio"
+              name="monedas"
+              value="2"
+            />
+            <label for="euro">Euro</label><br />
+            <input
+              class="input"
+              id="pesos-mexicanos"
+              type="radio"
+              name="monedas"
+              value="3"
+            />
+            <label for="pesos-mexicanos">Pesos Mexicanos</label><br />
+            <input
+              class="input"
+              id="pesos-argentinos"
+              type="radio"
+              name="monedas"
+              value="4"
+            />
+            <label for="pesos-argentinos">Pesos Argentinos</label><br />
+            <input
+              class="input"
+              id="bitcoin"
+              type="radio"
+              name="monedas"
+              value="5"
+            />
+            <label for="bitcoin">Bitcoin</label>
+          </span>
+        </div>
+      </div>
+      <h2 id="respuesta">Resultado:</h2>
+    </div>
+
+    <div id="clima" class="contenedor-clima">
+      <img src="clima.png" />
+      <div class="contenido-clima">
+        <h2 id="saludoTemperatura"></h2>
+        <h1 class="titulo5">Conversor de temperaturas</h1>
+        <label for="temperatura">Ingrese su unidad de medida</label>
+        <select name="temperatura" id="temperatura">
+          <option value="Fahrenheit">Fahrenheit</option>
+          <option value="Kelvin">Kelvin</option>
+          <option value="Celsius">Celsius</option>
+        </select>
+        <h3>Ingresa el valor</h3>
+        <input
+          type="number"
+          id="valorConvertir"
+          placeholder="Ingresa el valor"
+        />
+      </div>
+      <div class="content-clima">
+        <h3>Unidad de medida a convertir</h3>
+        <div class="content">
+          <span class="sp">
+            <input
+              class="input"
+              id="celsius"
+              type="radio"
+              name="temperaturas"
+              value="1"
+            />
+            <label for="celsius">Celsius</label><br />
+            <input
+              class="input"
+              id="kelvin"
+              type="radio"
+              name="temperaturas"
+              value="2"
+            />
+            <label for="kelvin">Kelvin</label><br />
+            <input
+              class="input"
+              id="fahrenheit"
+              type="radio"
+              name="temperaturas"
+              value="3"
+            />
+            <label for="fahrenheit">Fahrenheit</label><br />
+          </span>
+        </div>
+      </div>
+      <h2 id="respuestaTemperatura">Resultado:</h2>
+    </div>
+  </body>
+</html>

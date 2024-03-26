@@ -1,0 +1,143 @@
+body {
+  font-family: "Roboto Mono", monospace;
+  text-align: center;
+  background-image: url("https://caelum-online-public.s3.amazonaws.com/assets-imersaodev/Background.png");
+  background-color: #000000;
+  background-size: cover;
+  background-position: center top;
+  background-repeat: no-repeat;
+  height: 100%;
+}
+
+.container {
+  text-align: center;
+  padding: 20px;
+}
+
+.page-title {
+  color: #ffffff;
+  margin: 0 0 5px;
+}
+
+.page-subtitle {
+  color: #ffffff;
+  margin-top: 5px;
+}
+
+.page-logo {
+  width: 250px;
+}
+
+.alura-latam-logo {
+  width: 40px;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+body > img {
+  margin: 0 10px;
+}
+
+img {
+  max-height: 250px;
+}
+
+button {
+  border-radius: 10px;
+  padding: 0.5rem;
+  width: 30%;
+  font-size: 1.3rem;
+  font-weight: 900;
+}
+
+.btn-moneda {
+  background-color: skyblue;
+}
+.btn-temperatura {
+  background-color: rgb(70, 196, 154);
+}
+.content {
+  width: 60%;
+  margin: 3px auto 10px auto;
+  text-align: start;
+  padding-bottom: 2rem;
+}
+.contenedor-moneda,
+.contenedor-clima {
+  display: none;
+  justify-content: space-around;
+  align-items: center;
+  color: aqua;
+  flex-wrap: wrap;
+}
+
+.contenedor-moneda h1,
+.contenedor-clima h1 {
+  font-size: 2rem;
+  color: whitesmoke;
+  border-radius: 10px;
+  padding: 1rem;
+}
+.contenedor-moneda h1 {
+  background: linear-gradient(45deg, rgb(8, 99, 67) 50%, rgb(17, 33, 135) 100%);
+}
+.contenedor-clima h1 {
+  background: linear-gradient(45deg, rgb(170, 77, 54) 50%, rgb(255, 0, 0) 100%);
+}
+.contenido-moneda,
+.contenido-clima {
+  display: block;
+}
+.contenedor-moneda input,
+.contenedor-moneda select,
+.contenedor-clima input,
+.contenedor-clima select {
+  border-radius: 10px;
+  font-size: 1rem;
+  font-weight: 800;
+  border: 2px solid black;
+}
+.contenedor-moneda img,
+.contenedor-clima img {
+  margin-left: 5rem;
+}
+
+#respuesta {
+  background: radial-gradient(
+    circle at top left,
+    rgb(15, 107, 137),
+    rgb(5, 59, 51)
+  );
+  display: inline;
+  border-radius: 10px;
+  margin-top: 2rem;
+  padding: 1rem;
+  width: 90%;
+}
+#respuestaTemperatura {
+  background: radial-gradient(
+    circle at top right,
+    rgb(137, 15, 47),
+    rgb(59, 5, 5)
+  );
+  display: inline;
+  border-radius: 10px;
+  margin-top: 2rem;
+  padding: 1rem;
+  width: 90%;
+}
+
+.nombre{
+  margin: 1.5rem auto;
+}
+.nombre label{
+  font-size: 2rem;
+  font-weight: 900;
+}
+.nombre input{
+  margin-top: 2rem;
+  font-size: 1.5rem;
+  border-radius: 10px;
+  text-align: center;
+}
